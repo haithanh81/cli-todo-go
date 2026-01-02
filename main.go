@@ -10,5 +10,6 @@ type Task struct {
 
 // TODO: Implement storage
 func main() {
-	fmt.Println("CLI To-Do Manager v0.1")
+	// fmt.Println("CLI To-Do Manager v0.1")
+	fmt.Println("Welcome to CLI To-Do")
 }
