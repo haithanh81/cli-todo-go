@@ -1,0 +1,40 @@
+# --- Binaries (File thực thi) ---
+# Chặn file thực thi chính của dự án (trên Linux/macOS không có đuôi)
+cli-todo-go
+todo
+
+# Chặn file thực thi trên Windows
+cli-todo-go.exe
+
+# Chặn tất cả các file có đuôi.exe (thường là binary Windows)
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# --- Test & Build Artifacts (File sinh ra khi test/build) ---
+# File binary dùng để test (sinh ra khi chạy go test -c)
+*.test
+
+# File báo cáo độ bao phủ code (Coverage profiles)
+*.out
+coverage.txt
+
+# --- Go Workspaces (Dành cho Go 1.18+) ---
+# File này chỉ dùng cho môi trường local của dev, không nên push lên server chung
+go.work
+go.work.sum
+
+# --- OS Specific (File rác hệ điều hành) ---
+.DS_Store
+.DS_Store?
+Thumbs.db
+
+# --- IDE Specific (File cấu hình trình soạn thảo) ---
+# Không bắt buộc, nhưng nên thêm để tránh rác repo nếu team dùng nhiều editor khác nhau
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
