@@ -8,6 +8,7 @@ type Task struct {
 	Done  bool
 }
 
+// TODO: Implement storage
 func main() {
 	fmt.Println("CLI To-Do Manager v0.1")
 }
